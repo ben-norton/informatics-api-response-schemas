@@ -1,0 +1,89 @@
+{
+    "id": "https://api.naturalsciences.org/schemas/products/ProductsResponse.schema.json",
+    "$schema": "https://json-schema.org/draft/2019-09/schema#",
+    "title": "NCMNS API Response Schema - Data Products",
+    "description": "Standard Response Schema for the Data Product API Endpoints ",
+    "type": "object",
+    "properties": {
+        "status": {"$ref": "#/definitions/status_type"},
+        "data": {"$ref": "#/definitions/data_type"},
+        "metadata": {"$ref": "#/definitions/metadata_type"}
+    },
+    "definitions": {
+        "status_type": {
+            "type": "object",
+            "properties": {
+                "code": {"type": "integer"},
+                "message": {"type": "string"}
+            }
+        },
+        "resourceType_type": {
+            "type": "object",
+            "properties": {
+                "typeName": {"type": "string"},
+                "definition": {"type": "string"},
+                "referenceUrl": {"type": "null"},
+                "remarks": {"type": "null"}
+            }
+        },
+        "data_type": {
+            "type": "array",
+            "minItems": 0,
+            "items": {
+                "type": "object",
+                "properties": {
+                    "resourceType": {"$ref": "#/definitions/resourceType_type"},
+                    "guid": {"type": "string"},
+                    "title": {"type": "string"},
+                    "shortName": {"type": "string"},
+                    "identifier": {"type": "string"},
+                    "identifierType": {"type": "string"},
+                    "description": {"type": "string"},
+                    "citation": {"type": "string"},
+                    "version": {"type": "string"},
+                    "licenseIdentifier": {"type": "string"},
+                    "publisher": {"type": "string"},
+                    "publicationYear": {"type": "integer"},
+                    "sourceUrl": {"type": "string"},
+                    "dataUsePolicy": {"type": "string"},
+                    "dataUsePolicyLink": {"type": "null"},
+                    "accessRights": {"type": "null"},
+                    "remarks": {"type": "null"}
+                },
+                "required": [
+                    "identifier",
+                    "dataUsePolicyLink",
+                    "citation",
+                    "description",
+                    "identifierType",
+                    "title",
+                    "version",
+                    "licenseIdentifier",
+                    "sourceUrl",
+                    "dataUsePolicy",
+                    "guid",
+                    "publisher",
+                    "publicationYear",
+                    "accessRights",
+                    "shortName",
+                    "remarks",
+                    "resourceType"
+                ]
+            }
+        },
+        "service_type": {
+            "type": "object",
+            "properties": {
+                "apiType": {"type": "string"},
+                "dataUri": {"type": "string"},
+                "webUri": {"type": "string"}
+            }
+        },
+        "metadata_type": {
+            "type": "object",
+            "properties": {
+                "service": {"$ref": "#/definitions/service_type"}
+            }
+        }
+    }
+}
