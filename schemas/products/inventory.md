@@ -4,7 +4,7 @@
 ## Summary  
 | Resource                      | Reponse Schema File                        | Date Created | Version |
 | ----------------------------- | ------------------------------------------ | ------------ | ------- |
-| Product                       | ProductResponseSchema.json                 | 20211101     | 1       |
+| Data Products                 | ProductResponseSchema.json                 | 20211101     | 1       |
 | ASM Mammal Diversity Database | MammalDiversityDatabaseResponseSchema.json | 20211101     | 1       |
 
 ## Details   
