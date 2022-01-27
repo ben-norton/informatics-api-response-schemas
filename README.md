@@ -6,7 +6,7 @@ Version: 6th Generation (Project Mysticeti)
 Platform Home: https://data.naturalsciences.org/  
 API Docs: https://data.naturalsciences.org/api/docs  
 API Landing: https://data.naturalsciences.org/api  
-
+Latest Schema Inventory: https://github.com/NCMuseumNaturalSciences/ncmns-api-response-schemas/blob/main/inventory.md
 
 JSON Schema Draft 7  
 Schemas Generated with Oxygen XML Editor  
