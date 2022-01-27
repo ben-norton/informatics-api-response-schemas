@@ -11,3 +11,9 @@ API Landing: https://data.naturalsciences.org/api
 JSON Schema Draft 7  
 Schemas Generated with Oxygen XML Editor  
 Last Updated: 2022/01/27
+
+**Contact**  
+Ben Norton  
+Head of Technology, Collections Data Curator, Collections Manager of Mineralogy  
+North Carolina Museum of Natural Sciences  
+ben.norton@naturalsciences.org  
