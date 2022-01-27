@@ -1,0 +1,108 @@
+{
+    "$schema": "https://json-schema.org/draft-07/schema#",
+    "$id": "https://data.naturalsciences.org/schemas/responses/api-landing-response.schema.json",
+    "title": "NCMNS API Response Schema - API Landing (/api)",
+    "description": "Standard Response Schema for the Error Code 422",
+    "type": "object",
+    "properties": {
+        "success": {"$ref": "#/definitions/success_type"},
+        "data": {"$ref": "#/definitions/data_type"}
+    },
+    "definitions": {
+        "success_type": {
+            "type": "object",
+            "properties": {
+                "code": {"type": "integer"},
+                "message": {"type": "string"}
+            }
+        },
+        "provider_type": {
+            "type": "object",
+            "properties": {
+                "@type": {"type": "string"},
+                "name": {"type": "string"},
+                "email": {"type": "string"}
+            }
+        },
+        "links_type": {
+            "type": "array",
+            "minItems": 0,
+            "items": {
+                "type": "object",
+                "properties": {
+                    "href": {"type": "string"},
+                    "rel": {"type": "string"},
+                    "type": {"type": "string"},
+                    "title": {"type": "string"}
+                },
+                "required": [
+                    "rel",
+                    "href",
+                    "type",
+                    "title"
+                ]
+            }
+        },
+        "api_type": {
+            "type": "object",
+            "properties": {
+                "@type": {"type": "string"},
+                "@id": {"type": "string"},
+                "name": {"type": "string"},
+                "description": {"type": "string"},
+                "documentation": {"type": "string"},
+                "version": {"type": "string"},
+                "provider": {"$ref": "#/definitions/provider_type"},
+                "links": {"$ref": "#/definitions/links_type"}
+            }
+        },
+        "resourceClasses_type": {
+            "type": "array",
+            "minItems": 0,
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {"type": "string"},
+                    "description": {"type": "string"},
+                    "version": {"type": "string"},
+                    "url": {"type": "string"}
+                },
+                "required": [
+                    "name",
+                    "description",
+                    "version",
+                    "url"
+                ]
+            }
+        },
+        "resourceTypes_type": {
+            "type": "array",
+            "minItems": 0,
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {"type": "string"},
+                    "pathName": {"type": "string"},
+                    "description": {"type": "string"},
+                    "url": {"type": "string"},
+                    "resourceClass": {"type": "string"}
+                },
+                "required": [
+                    "pathName",
+                    "name",
+                    "description",
+                    "url",
+                    "resourceClass"
+                ]
+            }
+        },
+        "data_type": {
+            "type": "object",
+            "properties": {
+                "api": {"$ref": "#/definitions/api_type"},
+                "resourceClasses": {"$ref": "#/definitions/resourceClasses_type"},
+                "resourceTypes": {"$ref": "#/definitions/resourceTypes_type"}
+            }
+        }
+    }
+}
