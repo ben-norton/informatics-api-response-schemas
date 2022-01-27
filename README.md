@@ -7,4 +7,7 @@ Platform Home: https://data.naturalsciences.org/
 API Docs: https://data.naturalsciences.org/api/docs  
 API Landing: https://data.naturalsciences.org/api  
 
+
+JSON Schema Draft 7  
+Schemas Generated with Oxygen XML Editor  
 Last Updated: 2022/01/27
