@@ -2,11 +2,18 @@
 Response Schemas for the NCMNS API and Data Publishing Platform  
   
 NCMNS Data Publishing Platform and API  
-Home: https://api.naturalsciences.org/  
-API Docs: https://api.naturalsciences.org/api/docs  
+Version: 6th Generation (Project Mysticeti)  
+Platform Home: https://data.naturalsciences.org/  
+API Docs: https://data.naturalsciences.org/api/docs  
+API Landing: https://data.naturalsciences.org/api  
 
-Schema File Naming Convention: [Resource Name Pluralized]Response.schema.json  
-ProductsResponse.schema.json  
 
+JSON Schema Draft 7  
+Schemas Generated with Oxygen XML Editor  
+Last Updated: 2022/01/27
 
-Last Updated: 2021/11/01
+**Contact**  
+Ben Norton  
+Head of Technology, Collections Data Curator, Collections Manager of Mineralogy  
+North Carolina Museum of Natural Sciences  
+ben.norton@naturalsciences.org  
