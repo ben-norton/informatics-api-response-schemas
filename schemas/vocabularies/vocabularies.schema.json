@@ -1,0 +1,179 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema#",
+    "$id": "https://data.naturalsciences.org/schemas/responses/vocabularies.schema.json",
+    "title": "NCMNS API Descriptive Endpoint - Vocabularies (/api/v2/vocabularies)",
+    "description": "Standard Response Schema for the Resource Class, Vocabularies",
+    "type": "object",
+    "properties": {
+        "status": {"$ref": "#/definitions/status_type"},
+        "data": {"$ref": "#/definitions/data_type"},
+        "metadata": {"$ref": "#/definitions/metadata_type"}
+    },
+    "definitions": {
+        "status_type": {
+            "type": "object",
+            "properties": {
+                "code": {"type": "integer"},
+                "message": {"type": "string"}
+            }
+        },
+        "relatedResource_type": {
+            "type": "object",
+            "properties": {
+                "guid": {"type": "string", "format": "uuid"},
+                "title": {"type": "string"},
+                "resourceType": {"type": "string"},
+                "relation": {"type": "string"}
+            }
+        },
+        "resourceClass_type": {
+            "type": "object",
+            "properties": {
+                "name": {"type": "string"},
+                "description": {"type": "string"},
+                "entryPoint": {"type": "string", "format": "uri"}
+            }
+        },
+        "classification_type": {
+            "type": "object",
+            "properties": {
+                "resourceClass": {"$ref": "#/definitions/resourceClass_type"},
+                "resourceType": {"$ref": "#/definitions/resourceClass_type"}
+            }
+        },
+        "data_type": {
+            "type": "array",
+            "minItems": 0,
+            "items": {
+                "type": "object",
+                "properties": {
+                    "@type": {"type": "string"},
+                    "@id": {"type": "string", "format": "uri"},
+                    "name": {"type": "string"},
+                    "guid": {"type": "string", "format": "uuid"},
+                    "description": {"type": "string"},
+                    "identifier": {"type": "string"},
+                    "citation": {"type": "string"},
+                    "version": {"type": "string"},
+                    "publisher": {"type": "null"},
+                    "relatedResource": {"$ref": "#/definitions/relatedResource_type"},
+                    "classification": {"$ref": "#/definitions/classification_type"}
+                },
+                "required": [
+                    "identifier",
+                    "citation",
+                    "@type",
+                    "name",
+                    "guid",
+                    "description",
+                    "@id",
+                    "classification"
+                ]
+            }
+        },
+        "pagination_type": {
+            "type": "object",
+            "properties": {
+                "firstPage": {"type": "string", "format": "uri"},
+                "previousPage": {"type": "string", "format": "uri"},
+                "nextPage": {"type": "string", "format": "uri"},
+                "lastPage": {"type": "string", "format": "uri"},
+                "itemsPerPage": {"type": "string"},
+                "totalItems": {"type": "integer"}
+            }
+        },
+        "provider_type": {
+            "type": "object",
+            "properties": {
+                 "@type": {"type": "string"},
+                "name": {"type": "string"},
+                "email": {"type": "string", "format": "email"},
+                "jobTitle": {"type": "string"},
+                "telephone": {"type": "string"},
+                "identifier": {"type": "string"}
+            }
+        },
+        "address_type": {
+            "type": "object",
+            "properties": {
+                "@type": {"type": "string"},
+                "addressLocality": {"type": "string"},
+                "addressRegion": {"type": "string"},
+                "postalCode": {"type": "string"},
+                "streetAddress": {"type": "string"}
+            }
+        },
+        "publisher_type": {
+            "type": "object",
+            "properties": {
+                "@type": {"type": "string"},
+                "name": {"type": "string"},
+                 "url": {"type": "string", "format": "uri"},
+                "telephone": {"type": "string"},
+                "address": {"$ref": "#/definitions/address_type"}
+            }
+        },
+        "api_type": {
+            "type": "object",
+            "properties": {
+                "@context": {"type": "string"},
+                "@type": {"type": "string"},
+                "@id": {"type": "string", "format":"iri"},
+                "name": {"type": "string"},
+                "description": {"type": "string"},
+                "documentation": {"type": "string", "format": "uri"},
+                "version": {"type": "string"},
+                "provider": {"$ref": "#/definitions/provider_type"},
+                "publisher": {"$ref": "#/definitions/publisher_type"}
+            }
+        },
+        "links_type": {
+            "type": "array",
+            "minItems": 0,
+            "items": {
+                "type": "object",
+                "properties": {
+                    "href": {"type": "string", "format": "uri"},
+                    "rel": {"type": "string"},
+                    "type": {"type": "string"},
+                    "title": {"type": "string"}
+                },
+                "required": [
+                    "rel",
+                    "href",
+                    "type",
+                    "title"
+                ]
+            }
+        },
+        "endpointType_type": {
+            "type": "object",
+            "properties": {
+                "level": {"type": "string"},
+                "resourceClass": {"$ref": "#/definitions/resourceClass_type"}
+            }
+        },
+        "parameters_type": {
+            "type": "object",
+            "properties": {
+                "limit": {"type": "string"}
+            }
+        },
+        "request_type": {
+            "type": "object",
+            "properties": {
+                "api": {"$ref": "#/definitions/api_type"},
+                "links": {"$ref": "#/definitions/links_type"},
+                "endpointType": {"$ref": "#/definitions/endpointType_type"},
+                "parameters": {"$ref": "#/definitions/parameters_type"}
+            }
+        },
+        "metadata_type": {
+            "type": "object",
+            "properties": {
+                "pagination": {"$ref": "#/definitions/pagination_type"},
+                "request": {"$ref": "#/definitions/request_type"}
+            }
+        }
+    }
+}
