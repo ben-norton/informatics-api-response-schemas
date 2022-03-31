@@ -3,6 +3,9 @@
     "$id": "https://data.naturalsciences.org/schemas/responses/vocabulary-term.schema.json",
     "title": "NCMNS API Single Resource Endpoint - Vocabulary Term (/api/v2/vocabularies/term?guid=xxx)",
     "description": "Standard Response Schema for a single Vocabulary Term",
+    "version": "20220331",
+    "lastModified": "20220321",
+    "additionalProperties": true,
     "type": "object",
     "properties": {
         "status": {"$ref": "#/definitions/status_type"},

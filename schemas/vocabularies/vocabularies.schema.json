@@ -1,8 +1,11 @@
 {
-    "$schema": "https://json-schema.org/draft/2019-09/schema#",
+    "$schema": "https://json-schema.org/draft/2020-12/schema#",
     "$id": "https://data.naturalsciences.org/schemas/responses/vocabularies.schema.json",
     "title": "NCMNS API Descriptive Endpoint - Vocabularies (/api/v2/vocabularies)",
     "description": "Standard Response Schema for the Resource Class, Vocabularies",
+    "version": "20220331",
+    "lastModified": "20220321",
+    "additionalProperties": true,
     "type": "object",
     "properties": {
         "status": {"$ref": "#/definitions/status_type"},
