@@ -1,6 +1,7 @@
-# NCMNS API Response Schemas
-Response Schemas for the NCMNS API and Data Publishing Platform  
-  
+# Informatics API Response Schemas
+Response Schemas for APIs in the Geoinformatics and Bioinformatics domains
+
+
 NCMNS Data Publishing Platform and API  
 Version: 6th Generation (Project Mysticeti)  
 Platform Home: https://data.naturalsciences.org/  
