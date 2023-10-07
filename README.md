@@ -1,4 +1,4 @@
-# Informatics API Response Schemas
+# API Response Schemas
 Response Schemas for APIs in the Geoinformatics and Bioinformatics domains
 
 Current Implementation Platform  
