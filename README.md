@@ -5,7 +5,7 @@ Current Implementation Platform
 NCMNS Data Publishing Platform and API  
 Version: 6th Generation (Project Mysticeti)  
 Platform Home: https://data.naturalsciences.org/  
-API Docs: https://data.naturalsciences.org/api/docs  
+API Docs: https://data.naturalsciences.org/api/docs  (in progress)
 API Landing: https://data.naturalsciences.org/api  
 
 Planned Implementation Platform (2023-early 2024)
