@@ -17,16 +17,13 @@ Resources are instances of Resource Types
 Each Research belongs to a Resource Type
 Each Resource Type belongs to a Class
 --
-
-Resources conditionally may belong to Resource Collections 
-Condition: If a resource collection exists, then each associated resource belongs to the resource collection
-Resource collections exist when a resource is not domain-specific. Example: The Mammals Diversity Database is a resource in the taxonomic checklists/bioinformatics domain. Therefore, the MDD does not belong to a Resource Collection. In contrast, terms are conceptually domain-agnostic. Therefore, the resource, term, is a member of the resource collection, term collection.
-
-
-
-
+Resources conditionally may belong to Resource Collections   
+Condition: If a resource collection exists, then each associated resource belongs to the resource collection  
+  
+Resource collections exist when a resource is not domain-specific. Example: The Mammals Diversity Database is a resource in the taxonomic checklists/bioinformatics domain. Therefore, the MDD does not belong to a Resource Collection. In contrast, terms are conceptually domain-agnostic. Therefore, the resource, term, is a member of the resource collection, term collection.  
 
 
 ### Hierarchy
-Root > (Resource) Class > Resource Type > Resource  
-API > Data Products > Checklists > Mammal Diversity Database  
+Root > (Resource) Class > Resource Type > (Resource Collection) > Resource  
+API > Data Product > Checklist > Mammal Diversity Database  
+API > Vocabulary > Term Collection > Term
