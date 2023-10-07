@@ -7,7 +7,7 @@
 | Mammal Diversity Database | Resource | https://data.naturalsciences.org/api/v2/data-products/checklists/mdd | [mdd-response.schema.json](https://github.com/ben-norton/informatics-api-response-schemas/blob/da058784ccd66ba3885834c9fe23e5f81082fae1/schemas/data-products/mdd-response.schema.json) |
 | 422 Error | Root (Global) |  | [422-error-response.schema.json](https://github.com/ben-norton/informatics-api-response-schemas/blob/da058784ccd66ba3885834c9fe23e5f81082fae1/schemas/metadata/422-error-response.schema.json) |
 | Vocabulary* | Class | https://data.naturalsciences.org/api/v2/vocabularies | [vocabularies.schema.json](https://github.com/ben-norton/informatics-api-response-schemas/blob/da058784ccd66ba3885834c9fe23e5f81082fae1/schemas/vocabularies/vocabularies.schema.json) |
-| Term | Resource Type |  | [vocabulary-term.schema.json](https://github.com/ben-norton/informatics-api-response-schemas/blob/da058784ccd66ba3885834c9fe23e5f81082fae1/schemas/vocabularies/vocabulary-term.schema.json) |
+| Term | Resource Type | https://data.naturalsciences.org/api/v2/vocabularies/term?guid=[guid] | [vocabulary-term.schema.json](https://github.com/ben-norton/informatics-api-response-schemas/blob/da058784ccd66ba3885834c9fe23e5f81082fae1/schemas/vocabularies/vocabulary-term.schema.json) |
 | Term Collection | Resource Collection |  | [vocabulary-term-collection.schema.json](https://github.com/ben-norton/informatics-api-response-schemas/blob/da058784ccd66ba3885834c9fe23e5f81082fae1/schemas/vocabularies/vocabulary-terms-collection.schema.json) |
 
 *Also referred to as data dictionaries in specific contexts
