@@ -20,7 +20,6 @@ Last Updated: 2023/10/08
 
 **Contact**  
 Ben Norton  
-Senior Data Scientist, Developer, Consultant  
-Ecosystem Planning & Restoration  
+Senior Data Scientist, Informatics Web Developer, Private Consultant
 ben@geoapis.io  
 
