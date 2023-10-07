@@ -16,7 +16,7 @@ Latest Schema Inventory: https://github.com/ben-norton/informatics-api-response-
 
 JSON Schema Draft 7  
 Schemas Generated with Oxygen XML Editor  
-Last Updated: 2022/01/27
+Last Updated: 2023/10/08
 
 **Contact**  
 Ben Norton  
