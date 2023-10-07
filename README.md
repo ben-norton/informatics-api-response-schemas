@@ -1,6 +1,6 @@
 # API Response Schemas
 Response Schemas for APIs in the Geoinformatics and Bioinformatics domains  
-6th Edition.
+6th Edition Data Publishing Platform  
 
 Current Implementation Platform  
 NCMNS Data Publishing Platform and API  
