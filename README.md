@@ -1,5 +1,5 @@
 # API Response Schemas
-Response Schemas for APIs in the Geoinformatics and Bioinformatics domains
+Response Schemas for APIs in the Geoinformatics and Bioinformatics domains  
 6th Edition.
 
 Current Implementation Platform  
