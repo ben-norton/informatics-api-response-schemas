@@ -15,8 +15,8 @@
 ### Relationships  
 * Resources are instances of Resource Types  
 * Each Research belongs to a Resource Type
-* Each Resource Type belongs to a Class
---
+* Each Resource Type belongs to a Class  
+  
 Resources conditionally may belong to Resource Collections   
 Condition: If a resource collection exists, then each associated resource belongs to the resource collection  
   
